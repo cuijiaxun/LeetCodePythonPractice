@@ -18,8 +18,7 @@ class Solution(object):
                 break
                 
             if current not in num2.keys():
-                num2[current] = set()
-            num2[current].add(i)
+                num2[current] = i
 
         return [index_1,index_2]
         """Solution2

@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: List[int]
         """
         """Solution 1"""
-        #32ms, 13.4mb
+        #24ms, 13.4mb
         num1 = nums
         num2 = {}
         for i in range(len(num1)):

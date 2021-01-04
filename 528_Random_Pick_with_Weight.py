@@ -21,9 +21,10 @@ class Solution:
             if array[low]> target: return 0
         if high-low <=1:
             return high
-        mid = (low+high)//2
-        if array[mid]<=target:
-            return self.binSearch(array, target, mid, high)
-        else:
-            return self.binSearch(array, target, low, mid)
-        return None
+        while high-low>1:
+            mid = (low+high)//2
+            if array[mid]<=target:
+                low = mid 
+            else:
+                high = mid
+        return high
